@@ -1,46 +1,53 @@
 import React from 'react';
-import Layout from '../components/layout';
+import { useStaticQuery, graphql } from 'gatsby';
+
+import ProjectOutline from '../components/ProjectOutline';
+import Layout from '../components/Layout';
 import '../styles/global.css';
-import { useStaticQuery, graphql } from "gatsby"
 
 export default function Work() {
     const data = useStaticQuery(graphql`
-        query MyQuery {
-            allContentfulProjectDetail(sort: {order: ASC, fields: title}) {
-                totalCount
-                nodes {
-                    createdAt(fromNow: true)
-                    title
-                    techStack
-                    contentful_id
-                    gitHubLink
-                    appLink
-                    mainImage {
-                        fluid {
-                            src
-                        }
+    query WorkPageQuery {
+        allContentfulProjectOverview(sort: {order: ASC, fields: priority}) {
+            totalCount
+            nodes {
+                title
+                techStack
+                contentful_id
+                description {
+                    description
+                }
+                gitHubLink
+                appLink
+                mainImage {
+                    fluid {
+                        src
                     }
                 }
             }
         }
-    `).allContentfulProjectDetail;
+    }
+`).allContentfulProjectOverview;
 
-    const renderProjects = () => {
-        return data.nodes?.map(project => {
-            return (
-                <li key={project.contentful_id}>
-                    <p>{project.title}</p>
-                    <img src={project.mainImage.fluid.src} />
-                </li>)
-        })
-    };
+    console.log(data.nodes);
+    const projects = data.nodes;
+
+    // const renderProjects = () => {
+    //     return data.nodes?.map(project => {
+    //         return (
+    //             <li key={project.contentful_id}>
+    //                 <p>{project.title}</p>
+    //                 <img src={project.mainImage.fluid.src} alt="project screenshot" />
+    //             </li>)
+    //     })
+    // };
 
     return (
         <Layout>
-            <h1>Hello</h1>
-            <p>I've waited here for you</p>
-            <p>There are {data.totalCount} projects</p>
-            <ul>{renderProjects()}</ul>
+            {/* <ul>{renderProjects()}</ul> */}
+            {projects.map(project =>
+                <ProjectOutline key={project.contentful_id} project={project} />
+            )}
         </Layout>
     );
 }

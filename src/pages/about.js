@@ -1,12 +1,13 @@
 import React from 'react';
-import Layout from '../components/layout';
+
+import Layout from '../components/Layout';
+import Hyun from '../components/Hyun';
 import '../styles/global.css';
 
 export default function About() {
-    return (
-        <Layout>
-            <h1>Tonight</h1>
-            <p>I throw myself into</p>
-        </Layout>
-    );
+  return (
+    <Layout>
+      <Hyun />
+    </Layout>
+  );
 }
