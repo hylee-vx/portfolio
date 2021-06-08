@@ -7,6 +7,7 @@ const TextField = ({ type, name, value, handler }) => {
             name={name}
             value={value}
             onChange={handler}
+            required
         />
     );
 };

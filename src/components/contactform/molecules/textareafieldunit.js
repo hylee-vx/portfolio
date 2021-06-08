@@ -1,6 +1,7 @@
 import React from 'react';
 import Label from '../atoms/label';
 import TextAreaField from '../atoms/textareafield';
+import './styles.css';
 
 const TextAreaFieldUnit = ({ name, type, rows, value, handler }) => {
     return (

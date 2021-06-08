@@ -9,7 +9,6 @@ const ContactForm = () => {
     const [newContact, setNewContact] = useState({
         name: '',
         email: '',
-        subject: '',
         message: '',
     });
 
@@ -27,10 +26,10 @@ const ContactForm = () => {
         <div>
             <form className="contact-form" onSubmit={handleSubmit}>
                 <h2 className="form-heading">Or write to me here</h2>
-                <TextFieldUnit name='name' type='text' value={newContact.name} handler={handleInputChange} />
-                <TextFieldUnit name='email' type='email' value={newContact.email} handler={handleInputChange} />
-                <DropdownUnit name='subject' value={newContact.subject} handler={handleInputChange} />
-                <TextAreaFieldUnit name='message' type='textarea' rows='6' value={newContact.message} handler={handleInputChange} />
+                <TextFieldUnit name='Name' type='text' value={newContact.name} handler={handleInputChange} />
+                <TextFieldUnit name='Email' type='email' value={newContact.email} handler={handleInputChange} />
+                <DropdownUnit name='Subject' />
+                <TextAreaFieldUnit name='Message' type='textarea' rows='6' value={newContact.message} handler={handleInputChange} />
                 <Button type='submit' value='Send' />
             </form>
         </div >

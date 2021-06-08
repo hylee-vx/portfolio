@@ -1,21 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Label from '../atoms/label';
-import DropdownSelect from '../atoms/dropdownselect';
+// import DropdownSelect from '../atoms/dropdownselect';
 import DropdownOption from '../atoms/dropdownoption';
+import './styles.css';
 
-const DropdownUnit = ({ name, value, handler }) => {
+const DropdownUnit = ({ name }) => {
+    const [subject, setSubject] = useState('');
+    const [options] = useState([
+        {
+            label: 'Work opportunity',
+            value: 'work',
+        },
+        {
+            label: 'Pro bono project',
+            value: 'probono',
+        },
+        {
+            label: 'Just saying hello',
+            value: 'hello',
+        },
+    ]);
+
     return (
         <div className="form-category">
             <Label name={name}>
-                <DropdownSelect
+                <select
                     name={name}
-                    value={value}
-                    onChange={handler}
+                    value={subject}
+                    onChange={event => setSubject(event.target.value)}
                 >
-                    <DropdownOption value='work' name='Work opportunity'></DropdownOption>
-                    <DropdownOption value='probono' name='Pro bono project'></DropdownOption>
-                    <DropdownOption value='hello' name='Just saying hello'></DropdownOption>
-                </DropdownSelect>
+                    {options.map(option => (
+                        <DropdownOption key={option.value} value={option.value} name={option.label}></DropdownOption>
+                    ))}
+                </select>
             </Label>
         </div>
     );

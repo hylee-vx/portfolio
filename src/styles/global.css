@@ -1,5 +1,10 @@
 html {
     background-color: #f2f0f0;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {

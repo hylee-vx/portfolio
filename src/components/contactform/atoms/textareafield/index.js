@@ -8,6 +8,7 @@ const TextAreaField = ({ type, name, rows, value, handler }) => {
             rows={rows}
             value={value}
             onChange={handler}
+            required
         />
     );
 };
