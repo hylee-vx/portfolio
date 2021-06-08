@@ -1,3 +1,7 @@
+body {
+    font-family: 'DM Sans';
+}
+
 div {
     margin: 3rem auto;
     max-width: 650;
