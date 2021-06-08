@@ -1,0 +1,8 @@
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-details, .contact-form {
+    width: 100%;
+}
