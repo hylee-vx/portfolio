@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TextAreaField = ({ type, name, rows, value, handler }) => {
+const FormTextAreaField = ({ type, name, rows, value, handler }) => {
     return (
         <textarea
             type={type}
@@ -13,4 +13,4 @@ const TextAreaField = ({ type, name, rows, value, handler }) => {
     );
 };
 
-export default TextAreaField;
+export default FormTextAreaField;

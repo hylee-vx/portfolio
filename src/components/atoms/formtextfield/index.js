@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TextField = ({ type, name, value, handler }) => {
+const FormTextField = ({ type, name, value, handler }) => {
     return (
         <input
             type={type}
@@ -12,4 +12,4 @@ const TextField = ({ type, name, value, handler }) => {
     );
 };
 
-export default TextField;
+export default FormTextField;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Label = ({ name, children }) => {
+const FormLabel = ({ name, children }) => {
     return (
         <label className="form-label">
             {name}
@@ -9,4 +9,4 @@ const Label = ({ name, children }) => {
     );
 };
 
-export default Label;
+export default FormLabel;

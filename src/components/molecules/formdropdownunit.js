@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import Label from '../atoms/label';
-// import DropdownSelect from '../atoms/dropdownselect';
-import DropdownOption from '../atoms/dropdownoption';
+import FormLabel from '../atoms/formlabel';
+import FormDropdownOption from '../atoms/formdropdownoption';
 import './styles.css';
 
-const DropdownUnit = ({ name }) => {
+const FormDropdownUnit = ({ name }) => {
     const [subject, setSubject] = useState('');
     const [options] = useState([
         {
@@ -23,19 +22,19 @@ const DropdownUnit = ({ name }) => {
 
     return (
         <div className="form-category">
-            <Label name={name}>
+            <FormLabel name={name}>
                 <select
                     name={name}
                     value={subject}
                     onChange={event => setSubject(event.target.value)}
                 >
                     {options.map(option => (
-                        <DropdownOption key={option.value} value={option.value} name={option.label}></DropdownOption>
+                        <FormDropdownOption key={option.value} value={option.value} name={option.label}></FormDropdownOption>
                     ))}
                 </select>
-            </Label>
+            </FormLabel>
         </div>
     );
 };
 
-export default DropdownUnit;
+export default FormDropdownUnit;

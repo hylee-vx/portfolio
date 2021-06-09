@@ -1,9 +1,9 @@
 import React from 'react';
 
-const DropdownOption = ({ value, name }) => {
+const FormDropdownOption = ({ value, name }) => {
     return (
         <option value={value}>{name}</option>
     );
 };
 
-export default DropdownOption;
+export default FormDropdownOption;

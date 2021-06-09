@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import TextFieldUnit from './molecules/textfieldunit';
-import DropdownUnit from './molecules/dropdownunit';
-import TextAreaFieldUnit from './molecules/textareafieldunit';
-import Button from './atoms/button';
+import FormTextFieldUnit from '../../molecules/formtextfieldunit';
+import FormDropdownUnit from '../../molecules/Formdropdownunit';
+import FormTextAreaFieldUnit from '../../molecules/formtextareafieldunit';
+import Button from '../../atoms/button';
 import './styles.css';
 
 const ContactForm = () => {
@@ -26,10 +26,10 @@ const ContactForm = () => {
         <div>
             <form className="contact-form" onSubmit={handleSubmit}>
                 <h2 className="form-heading">Or write to me here</h2>
-                <TextFieldUnit name='Name' type='text' value={newContact.name} handler={handleInputChange} />
-                <TextFieldUnit name='Email' type='email' value={newContact.email} handler={handleInputChange} />
-                <DropdownUnit name='Subject' />
-                <TextAreaFieldUnit name='Message' type='textarea' rows='6' value={newContact.message} handler={handleInputChange} />
+                <FormTextFieldUnit name='Name' type='text' value={newContact.name} handler={handleInputChange} />
+                <FormTextFieldUnit name='Email' type='email' value={newContact.email} handler={handleInputChange} />
+                <FormDropdownUnit name='Subject' />
+                <FormTextAreaFieldUnit name='Message' type='textarea' rows='6' value={newContact.message} handler={handleInputChange} />
                 <Button type='submit' value='Send' />
             </form>
         </div >
