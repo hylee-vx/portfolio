@@ -3,13 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../../../utils/fontawesome';
 import useContactData from '../../../hooks/usecontactdata';
 
-const GitHubLink = () => {
-    const { gitHubLink } = useContactData();
+const TwitterLink = () => {
+    const { twitterLink } = useContactData();
     return (
-        <a href={gitHubLink}>
-            <FontAwesomeIcon icon={['fab', 'github']} title="Hyun's GitHub account" />
+        <a href={twitterLink}>
+            <FontAwesomeIcon icon={['fab', 'twitter']} title="Hyun's Twitter account" />
         </a>
     );
 };
 
-export default GitHubLink;
+export default TwitterLink;

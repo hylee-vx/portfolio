@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '../fontawesome';
+import '../utils/fontawesome';
 
 const ProjectOutline = ({ project }) => {
     console.log(project);

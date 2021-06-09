@@ -2,7 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import ProjectOutline from '../components/ProjectOutline';
-import Layout from '../components/Layout';
+import Layout from '../components/organisms/layout';
 import '../styles/global.css';
 
 export default function Work() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import FormLabel from '../atoms/formlabel';
 import FormTextField from '../atoms/formtextfield';
-import './styles.css';
+import './formstyles.css';
 
 const FormTextFieldUnit = ({ name, type, value, handler }) => {
     return (

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import FormLabel from '../atoms/formlabel';
 import FormDropdownOption from '../atoms/formdropdownoption';
-import './styles.css';
+import './formstyles.css';
 
 const FormDropdownUnit = ({ name }) => {
     const [subject, setSubject] = useState('');

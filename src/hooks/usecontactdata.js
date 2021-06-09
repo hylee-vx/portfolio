@@ -1,7 +1,7 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
 const useContactData = () => {
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query ContactDataQuery {
         allContentfulContactDetails {
           nodes {
@@ -19,8 +19,8 @@ const useContactData = () => {
       }
     `).allContentfulContactDetails;
 
-    const contact = data.nodes[0];
-    return contact;
+  const contact = data.nodes[0];
+  return contact;
 };
 
 export default useContactData;

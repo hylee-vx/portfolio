@@ -1,7 +1,7 @@
 import React from 'react';
 import FormLabel from '../atoms/formlabel';
 import FormTextAreaField from '../atoms/formtextareafield';
-import './styles.css';
+import './formstyles.css';
 
 const FormTextAreaFieldUnit = ({ name, type, rows, value, handler }) => {
     return (

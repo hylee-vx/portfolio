@@ -1,6 +1,5 @@
 import React from 'react';
-import Layout from '../components/layout';
-import '../fontawesome';
+import Layout from '../components/organisms/layout';
 import '../styles/global.css';
 
 export default function Home() {

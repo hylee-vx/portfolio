@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Layout from '../components/Layout';
+import Layout from '../components/organisms/layout';
 import Hyun from '../components/Hyun';
 import '../styles/global.css';
 

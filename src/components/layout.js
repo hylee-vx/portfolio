@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import '@fontsource/dm-sans';
 import './Layout.css';
 
 const ListLink = props => (
