@@ -1,14 +1,15 @@
 import React from 'react';
-import NavLink from '../atoms/navlink';
+import { Link } from 'gatsby';
+// import NavLink from '../atoms/navlink';
 import './navstyles.css';
 
 const NavBar = () => {
     return (
         <div className="navbar">
-            <NavLink to={'/'} name='HYL' />
-            <NavLink to={'/work'} name='Work' />
-            <NavLink to={'/about'} name='About' />
-            <NavLink to={'/contact'} name='Contact' />
+            <Link to={'/'} className="nav-link">HYL</Link>
+            <Link to={'/work'} className="nav-link">Work</Link>
+            <Link to={'/about'} className="nav-link">About</Link>
+            <Link to={'/contact'} className="nav-link">Contact</Link>
         </div>
     );
 };

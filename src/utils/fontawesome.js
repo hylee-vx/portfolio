@@ -5,16 +5,18 @@ import {
     faEnvelope,
     faGraduationCap,
     faFilePdf,
+    faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 library.add(
     faGithub,
-    faLinkedin,
+    faLinkedinIn,
     faTwitter,
     faCode,
     faLink,
     faEnvelope,
     faGraduationCap,
     faFilePdf,
+    faChevronRight,
 );

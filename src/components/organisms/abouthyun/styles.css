@@ -1,0 +1,17 @@
+.hyun-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+}
+
+.hyun-photo, .hyun-bio {
+    width: 100%;
+}
+
+.hyun-photo {
+    border-radius: 0.3rem;
+}
+
+.hyun-bio {
+    margin: 0;
+}

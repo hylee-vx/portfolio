@@ -1,13 +1,16 @@
 import React from 'react';
 
 import Layout from '../components/organisms/layout';
-import Hyun from '../components/Hyun';
+import AboutHyun from '../components/organisms/abouthyun';
 import '../styles/global.css';
 
-export default function About() {
+const About = () => {
   return (
     <Layout>
-      <Hyun />
+      <h1>Hello, I'm Hyun</h1>
+      <AboutHyun />
     </Layout>
   );
-}
+};
+
+export default About;
