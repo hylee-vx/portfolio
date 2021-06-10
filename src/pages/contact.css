@@ -3,6 +3,6 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.contact-details, .contact-form {
+.contact-details-container, .contact-form-container {
     width: 100%;
 }

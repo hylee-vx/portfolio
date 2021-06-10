@@ -1,14 +1,15 @@
 import React from 'react';
-import GitHubLink from '../atoms/githublink';
-import LinkedInLink from '../atoms/linkedinlink';
-import TwitterLink from '../atoms/twitterlink';
+import '../../utils/fontawesome';
+import IconLink from '../atoms/iconlink';
+import useContactData from '../../hooks/usecontactdata';
 
 const SocialMediaLinks = () => {
+    const { gitHubLink, linkedInLink, twitterLink } = useContactData();
     return (
-        <div>
-            <GitHubLink />
-            <LinkedInLink />
-            <TwitterLink />
+        <div className="social-media-links">
+            <IconLink src={gitHubLink} icon={['fab', 'github']} title={"Hyun's GitHub account"} />
+            <IconLink src={linkedInLink} icon={['fab', 'linkedin']} title={"Hyun's LinkedIn account"} />
+            <IconLink src={twitterLink} icon={['fab', 'twitter']} title={"Hyun's Twitter account"} />
         </div>
     );
 };

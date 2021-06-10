@@ -23,7 +23,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div>
+        <div className="contact-form-container">
             <form className="contact-form" onSubmit={handleSubmit}>
                 <h2 className="form-heading">Or write to me here</h2>
                 <FormTextFieldUnit name='Name' type='text' value={newContact.name} handler={handleInputChange} />
