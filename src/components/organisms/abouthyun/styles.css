@@ -2,11 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5%;
-}
-
-.hyun-photo, .hyun-bio {
-    width: 100%;
-}
+} */
 
 .hyun-photo {
     border-radius: 0.3rem;
@@ -19,5 +15,6 @@
 }
 
 .hyun-bio {
+    width: 100%;
     margin: 0;
-} */
+}
