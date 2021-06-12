@@ -7,7 +7,7 @@ const useAuthorData = () => {
                 nodes {
                     heading
                     mainImage {
-                        fluid(maxWidth: 400) {
+                        fluid(maxWidth: 300) {
                             src
                         }
                     }
