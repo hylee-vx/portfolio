@@ -1,0 +1,10 @@
+.project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    margin-bottom: 4rem;
+}
+
+.project-title {
+    margin-top: 0;
+}

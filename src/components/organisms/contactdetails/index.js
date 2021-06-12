@@ -10,11 +10,10 @@ const ContactDetails = () => {
   const { email, home } = useContactData();
   return (
     <div className="contact-details-container">
-      <h2>You can find me here</h2>
-      <IconLink src={`mailto: ${email}`} icon={'envelope'} title={'Email Hyun using your default mail program'} />
+      <h2>and find me here</h2>
+      <IconLink src={`mailto: ${email}`} icon={'envelope'} title={'Email Hyun using your default mail program'} size={'2x'} />
       <p className="email-address">{email}</p>
-      <SocialMediaLinks className="social-media-links" />
-      <img src={home.fluid.src} alt="Map of Hyun's location" />
+      <img src={home.fluid.src} alt="Map of Hyun's location" className="map" />
     </div>
   );
 };

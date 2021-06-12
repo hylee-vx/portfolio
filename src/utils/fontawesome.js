@@ -6,6 +6,9 @@ import {
     faGraduationCap,
     faFilePdf,
     faChevronRight,
+    faHeart,
+    faMugHot,
+
 } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
@@ -19,4 +22,6 @@ library.add(
     faGraduationCap,
     faFilePdf,
     faChevronRight,
+    faHeart,
+    faMugHot,
 );

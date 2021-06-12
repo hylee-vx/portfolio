@@ -5,7 +5,7 @@ const useAuthorData = () => {
         query AuthorDataQuery {
             allContentfulAuthor {
                 nodes {
-                    name
+                    heading
                     mainImage {
                         fluid(maxWidth: 400) {
                             src

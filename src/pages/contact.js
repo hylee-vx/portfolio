@@ -8,10 +8,9 @@ import './contact.css';
 export default function Contact() {
     return (
         <Layout>
-            <h1>Contact</h1>
             <div className="contact-container">
-                <ContactDetails />
                 <ContactForm />
+                <ContactDetails />
             </div>
         </Layout>
     );

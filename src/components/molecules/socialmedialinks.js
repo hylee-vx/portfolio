@@ -1,7 +1,8 @@
 import React from 'react';
-import '../../utils/fontawesome';
 import IconLink from '../atoms/iconlink';
 import useContactData from '../../hooks/usecontactdata';
+import '../../utils/fontawesome';
+import './navstyles.css';
 
 const SocialMediaLinks = () => {
     const { gitHubLink, linkedInLink, twitterLink } = useContactData();
