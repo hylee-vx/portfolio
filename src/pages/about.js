@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Layout from '../components/organisms/layout';
-import AboutHyun from '../components/organisms/abouthyun';
+import Layout from '../components/layout';
+import AboutHyun from '../components/aboutHyun';
 import '../styles/global.css';
 
 const About = () => {

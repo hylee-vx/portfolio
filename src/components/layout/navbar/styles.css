@@ -1,0 +1,44 @@
+.nav-links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-inline-start: 0;
+    margin-bottom: 0.3rem;
+}
+
+.nav-link:first-child {
+    font-size: 2rem;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 2rem;
+}
+
+a {
+    color: #0f3f43;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fe6c03;
+}
+
+.active-nav-link {
+    color: #7a0225;
+    text-decoration: underline;
+}
+
+.social-media-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-icon {
+    margin-top: 1rem;
+}

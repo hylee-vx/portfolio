@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Layout from '../components/organisms/layout';
-import ProjectCard from '../components/organisms/projectcard';
+import Layout from '../components/layout';
+import ProjectCard from '../components/projectCard';
 import useProjectData from '../hooks/useprojectdata';
 import './work.css';
 import '../styles/global.css';

@@ -1,0 +1,8 @@
+.contact-icon {
+    color: #318053;
+    margin-left: 1rem;
+}
+
+.contact-icon:hover {
+    color: #fe6c03;
+}

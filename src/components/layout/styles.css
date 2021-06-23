@@ -1,0 +1,22 @@
+.navbar, .footer {
+    width: 100%;
+    /* position: fixed; */
+    /* margin: 0 auto; */
+}
+
+/* .navbar {
+    margin-bottom: 4rem;
+} */
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* 
+.nav-link {
+    font-weight: 500;
+} */
+
+/* .footer {
+    bottom: 0;
+} */

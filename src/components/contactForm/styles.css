@@ -1,0 +1,49 @@
+.contact-form {
+    display: inline-block;
+    width: 100%;
+}
+
+.form-category {
+    margin: 1rem auto;
+}
+
+.form-heading {
+    text-align: center;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    font-size: 16px; 
+    padding: 0.3rem;
+    margin: 0.6rem auto;
+}
+
+textarea {
+    margin-bottom: 0.8rem;
+}
+
+.button {
+    width: 40%;
+    font-size: 18px;
+    color: #fff;
+    background-color: #318053;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: 0 5px 10px rgba(49, 128, 83, 0.3);
+    transition: all ease 0.3s;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #fe6c03;
+    box-shadow: 0 5px 10px rgba(254, 108, 3, 0.3);
+    transform: translateY(-2px);
+}
+
+.button:active {
+    transform: translateY(0);
+}

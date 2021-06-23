@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from '../components/organisms/layout';
-import ContactDetails from '../components/organisms/contactdetails';
-import ContactForm from '../components/organisms/contactform';
+import Layout from '../components/layout';
+import ContactDetails from '../components/contactDetails';
+import ContactForm from '../components/contactForm';
 import '../styles/global.css';
 import './contact.css';
 
