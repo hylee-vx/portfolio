@@ -30,7 +30,7 @@ a {
 .social-media-links {
     display: flex;
     flex-direction: column;
-    text-align: right;
+    align-items: flex-end;
 }
 
 .contact-icon {

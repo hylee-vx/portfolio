@@ -5,8 +5,8 @@ import './styles.css';
 const ProjectCard = ({ project }) => {
     return (
         <div className="project-card">
-            <img src={project.mainImage.fluid.src} alt='project screenshot' className="project-image" />
             <ProjectSummary project={project} />
+            <img src={project.mainImage.fluid.src} alt='project screenshot' className="project-image" />
         </div>
     );
 };

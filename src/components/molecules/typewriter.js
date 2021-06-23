@@ -10,7 +10,7 @@ const Typewriter = () => {
 
         const delay = setTimeout(() => {
             setContent({ content: content + srcText[index], index: index + 1 });
-        }, 0 | (Math.random() * 200 + 50));
+        }, 0 | (Math.random() * 150 + 50));
     }, [content]);
 
     // blinker

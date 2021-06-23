@@ -5,7 +5,7 @@ import './styles.css';
 const IconLink = ({ src, icon, title, size }) => {
     return (
         <a href={src} className="contact-link">
-            <FontAwesomeIcon icon={icon} title={title} size={size} className="contact-icon" />
+            <FontAwesomeIcon icon={icon} title={title} size={size} target="_blank" rel="noopener noreferrer" className="contact-icon" />
         </a>
     );
 };

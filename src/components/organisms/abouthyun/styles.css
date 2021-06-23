@@ -4,7 +4,7 @@
 
 .hyun-heading {
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
 }
 
 .hyun-photo {
@@ -13,5 +13,8 @@
 }
 
 .hyun-bio {
-    margin: 1rem 6rem;
+    max-width: 900px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 1rem 1rem;
 }

@@ -1,8 +1,21 @@
+.contact-details-heading {
+    text-align: center;
+}
+
 .email-address {
     display: inline-block;
     font-size: 20px;
+    margin-left: 0.8rem;
 }
 
 .map {
-    margin-top: 1rem;
+    max-width: 100%;
+    margin-top: 1.9rem;
+    border-radius: 0.2rem;
+}
+
+@media (max-width: 576px) {
+    .map {
+        margin-top: 0;
+    }
 }
