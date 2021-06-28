@@ -7,9 +7,7 @@ const useAuthorData = () => {
                 nodes {
                     heading
                     mainImage {
-                        fluid(maxWidth: 300) {
-                            src
-                        }
+                        gatsbyImageData(width: 300)
                     }
                     bio {
                         bio

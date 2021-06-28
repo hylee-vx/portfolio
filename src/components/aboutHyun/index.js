@@ -1,13 +1,16 @@
 import React from 'react';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import useAuthorData from '../../hooks/useauthordata';
 import './styles.css';
 
 const AboutHyun = () => {
     const { mainImage, heading, bio } = useAuthorData();
+    const image = getImage(mainImage);
+
     return (
         <div className="hyun-container">
             <h1 className="hyun-heading">{heading}</h1>
-            <img src={mainImage.fluid.src} alt="Hyun standing on beach" className="hyun-photo" />
+            <GatsbyImage image={image} alt="laptop on desk with notebook, coffee and cat model" className="hyun-photo" />
             <p className="hyun-bio">{bio.bio}</p>
         </div>
     );

@@ -14,9 +14,7 @@ const useProjectData = () => {
                     appLink
                     gitHubLink
                     mainImage {
-                        fluid(maxWidth: 400) {
-                            src
-                        }
+                        gatsbyImageData(width: 400)
                     }
                 }
             }

@@ -10,9 +10,7 @@ const useContactData = () => {
             linkedInLink
             twitterLink
             home {
-              fluid(maxWidth: 450) {
-                  src
-              }
+              gatsbyImageData(width: 450)
             }
           }
         }

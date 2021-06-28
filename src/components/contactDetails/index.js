@@ -1,4 +1,5 @@
 import React from 'react';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import IconLink from '../iconLink';
 import useContactData from '../../hooks/usecontactdata';
 import '../../utils/fontawesome';
@@ -7,6 +8,7 @@ import './styles.css';
 
 const ContactDetails = () => {
   const { email, home } = useContactData();
+  const image = getImage(home);
 
   // const updateTime = () => {
   //   const currentTime = new Date().toLocaleTimeString(['en-UK'], { hour: '2-digit', minute: '2-digit' });
@@ -25,7 +27,7 @@ const ContactDetails = () => {
       <h2 className="contact-details-heading">and find me here</h2>
       {/* <IconLink src={`mailto: ${email}`} icon={'envelope'} title={'Email Hyun using your default mail program'} size={'2x'} />
       <p className="email-address">{email}</p> */}
-      <img src={home.fluid.src} alt="Map of Hyun's location" className="map" />
+      <GatsbyImage image={image} alt="Map of Hyun's location" className="map" />
       {/* <p>{updateTime()}</p> */}
     </div>
   );
