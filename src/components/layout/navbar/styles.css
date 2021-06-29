@@ -8,7 +8,8 @@
 }
 
 .nav-link:first-child {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    font-weight: 900;
     margin-right: auto;
     margin-left: 0;
 }

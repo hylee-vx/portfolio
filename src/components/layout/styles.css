@@ -1,40 +1,23 @@
 .page-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    font-family: 'DM Sans';
-    font-size: 16px;
-    color: #444;
-    padding: 2rem 2rem 0 2rem;
-    margin: 0;
+    height: 100%;
+    padding: 2rem 2rem 1rem 2rem;
 }
 
 .content-container {
     width: fit-content;
     max-width: 1200px;
     margin: 0 auto;
+    flex: 1
 }
 
 .navbar, .footer {
     width: 100%;
 }
 
-.footer {
-    margin-top: auto;
-}
-
-h1 {
-    font-size: 40px;
-    margin: 4rem auto;
-}
-
-/* 
-.nav-link {
-    font-weight: 500;
-} */
-
 @media (max-width: 575px) {
     .page-container {
-        padding: 1rem 1rem 0 1rem;
+        padding: 1rem 1rem 0.8rem 1rem;
     }
 }
