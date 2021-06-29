@@ -8,12 +8,12 @@ import './styles.css';
 
 const Layout = ({ children }) => {
     return (
-        <div>
+        <div className="page-container">
             <NavBar />
             <div className="content-container">
                 {children}
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 };

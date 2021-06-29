@@ -11,6 +11,7 @@ import {
     faMugHot,
 } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 
 config.autoAddCss = false;
 
@@ -26,4 +27,5 @@ library.add(
     faChevronRight,
     faHeart,
     faMugHot,
+    faCopyright,
 );

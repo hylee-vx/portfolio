@@ -8,14 +8,10 @@ html {
     box-sizing: inherit;
 }
 
-body {
+/* body {
     font-family: 'DM Sans';
     font-size: 16px;
     color: #444;
     margin: 2rem;
-}
+} */
 
-h1 {
-    font-size: 40px;
-    margin: 4rem auto;
-}

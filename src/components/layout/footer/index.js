@@ -6,15 +6,11 @@ import './styles.css';
 const Footer = () => {
     return (
         <div className="footer">
-            <p>Made with
+            <p className="footer-text">
                 <span>
-                    <FontAwesomeIcon icon={'heart'} title={'heart icon'} className="footer-icon" />
+                    <FontAwesomeIcon icon={['far', 'copyright']} title={'copyright'} className="footer-icon" />
                 </span>
-                and
-                <span>
-                    <FontAwesomeIcon icon={'mug-hot'} title={'hot mug icon'} className="footer-icon" />
-                </span>
-                by Hyun Young Lee
+                Hyun Young Lee 2021
             </p>
         </div>
     );
