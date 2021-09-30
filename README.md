@@ -5,6 +5,11 @@ Self taught Gatsby, Contentful and GraphQL in order to develop experience with s
 
 ***Work In Progress***
 
+# Technologies
+- Gatsby
+- GraphQL
+- Contentful headless CMS
+
 
 ## 🚀 Quick start
 
