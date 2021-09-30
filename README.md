@@ -1,11 +1,10 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Personal Portfolio
+A personal website built with Gatsby to provide an overview of my personal projects. All content stored in Contentful CMS and queried with GraphQL. 
+
+Self taught Gatsby, Contentful and GraphQL in order to develop experience with static site generators/Jamstack and headless CMS. Developed a strong grounding in GraphQL as an alternative to REST APIs.
+
+***Work In Progress***
+
 
 ## 🚀 Quick start
 
